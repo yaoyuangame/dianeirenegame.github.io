@@ -3,139 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>allmatrix - Official Website</title>
+    <title>Dianeirenegame - Official Website</title>
     <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #fafafa;
-            color: #333;
             line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
         }
 
         header {
-            background: #222;
+            background-color: #1e1e1e;
             color: #fff;
-            padding: 20px 0;
+            padding: 50px 20px;
             text-align: center;
         }
 
             header h1 {
                 margin: 0;
-                font-size: 2.5rem;
+                font-size: 2.8em;
             }
 
             header p {
-                font-size: 1.2rem;
-                color: #ccc;
+                margin-top: 10px;
+                font-size: 1.2em;
             }
 
         nav {
-            background: #444;
-            padding: 10px 0;
             text-align: center;
+            background-color: #fff;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
 
             nav a {
-                color: #fff;
                 text-decoration: none;
-                margin: 0 15px;
-                font-size: 1rem;
+                color: #1e1e1e;
+                margin: 0 20px;
+                font-weight: bold;
+                font-size: 1em;
             }
 
                 nav a:hover {
-                    text-decoration: underline;
+                    color: #007acc;
                 }
 
         section {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
-        h2 {
-            border-bottom: 2px solid #f39c12;
-            padding-bottom: 5px;
-            color: #f39c12;
+            section h2 {
+                color: #007acc;
+                margin-bottom: 25px;
+                font-size: 2em;
+            }
+
+        .game-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
         }
+
+        .game-item {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 10px;
+            flex: 1 1 300px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+            .game-item:hover {
+                transform: translateY(-5px);
+            }
+
+            .game-item h3 {
+                margin-top: 0;
+                color: #1e1e1e;
+            }
 
         footer {
-            background: #222;
-            color: #ccc;
+            background-color: #1e1e1e;
+            color: #fff;
             text-align: center;
-            padding: 15px;
-            font-size: 0.9rem;
-            margin-top: 20px;
+            padding: 35px 20px;
+            margin-top: 50px;
         }
 
             footer a {
-                color: #f39c12;
-                text-decoration: none;
+                color: #fff;
+                text-decoration: underline;
             }
+
+        @media (max-width: 768px) {
+            .game-list {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
+
     <header>
-        <h1>allmatrix</h1>
-        <p>Making Games the Universal Language</p>
+        <h1>Dianeirenegame</h1>
+        <p>Creating Fun and Engaging Games for Everyone</p>
     </header>
 
     <nav>
         <a href="#about">About Us</a>
         <a href="#games">Our Games</a>
-        <a href="#advantages">Advantages</a>
-        <a href="#careers">Join Us</a>
         <a href="#contact">Contact</a>
     </nav>
 
     <section id="about">
         <h2>About Us</h2>
         <p>
-            allmatrix is a professional game company specializing in casual and creative gameplay.
-            We are passionate about delivering fun, easy-to-learn, and enjoyable games to players worldwide.
-            Our team consists of experienced game designers, developers, and artists dedicated to turning creative ideas into high-quality gaming experiences.
-        </p>
-        <p>
-            We believe great games are more than entertainment — they are a way to connect and create lasting memories.
+            Dianeirenegame is a professional game development studio dedicated to creating engaging and innovative gaming experiences.
+            Our team specializes in casual and mobile games, blending creativity with cutting-edge technology to deliver fun and memorable experiences for players worldwide.
         </p>
     </section>
 
     <section id="games">
         <h2>Our Games</h2>
-        <ul>
-            <li><strong>Casual Puzzle Games</strong> – Fun and easy for all ages</li>
-            <li><strong>Match & Connect Games</strong> – Innovative levels and endless fun</li>
-            <li><strong>Interactive Story Games</strong> – Experience unique stories while playing</li>
-            <li><strong>Multi-platform Support</strong> – iOS, Android, and PC</li>
-        </ul>
-    </section>
-
-    <section id="advantages">
-        <h2>Our Advantages</h2>
-        <ul>
-            <li><strong>Original Gameplay</strong> – No templates, unique experiences</li>
-            <li><strong>Global Vision</strong> – Localization for different markets</li>
-            <li><strong>Fast Iteration</strong> – Agile development with quick updates</li>
-            <li><strong>Player First</strong> – Listening to and valuing player feedback</li>
-        </ul>
-    </section>
-
-    <section id="careers">
-        <h2>Join Us</h2>
-        <p>
-            If you love games, have creativity, and want to join a passionate team, allmatrix welcomes you!
-            We are hiring for positions such as game designers, Unity developers, and artists.
-        </p>
+        <div class="game-list">
+            <div class="game-item">
+                <h3>SweetChat</h3>
+                <p>A modern-style dating simulation game where players can interact with AI-driven characters and customize their experiences.</p>
+            </div>
+            <div class="game-item">
+                <h3>NightClub Manager</h3>
+                <p>Manage your own virtual nightclub, hire staff, organize events, and attract VIP guests to grow your club empire.</p>
+            </div>
+            <div class="game-item">
+                <h3>GlowGarden</h3>
+                <p>A relaxing casual puzzle game where players cultivate a magical garden, solve challenges, and unlock special plants and decorations.</p>
+            </div>
+        </div>
     </section>
 
     <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: <a href="mailto:nguyenduyen297228@gmail.com">nguyenduyen297228@gmail.com</a></p>
+        <p>
+            For business inquiries, partnerships, or feedback, please reach out to us:
+        </p>
+        <p>Email: <a href="mailto:utlandnanin@gmail.com">utlandnanin@gmail.com</a></p>
     </section>
 
     <footer>
-        &copy; 2025 allmatrix. All rights reserved. | <a href="#top">Back to top</a>
+        <p>© 2025 Dianeirenegame. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
