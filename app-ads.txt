@@ -3,6 +3,7 @@ google.com, pub-3325686966695759, DIRECT, f08c47fec0942fa0
 # Meta Audience--------
 facebook.com, 1332264281391037, DIRECT, c3e20eee3f780d68
 facebook.com, 674935621241336, DIRECT, c3e20eee3f780d68
+facebook.com, 825372703542227, DIRECT, c3e20eee3f780d68
 # Applovin--------
 applovin.com, 4fbdc80c461ce7ece6a865bcdf3b8461, DIRECT
 adyoulike.com, 2d578cf695c89ec2ba707280319d2020, RESELLER
